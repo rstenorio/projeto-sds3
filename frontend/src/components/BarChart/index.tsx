@@ -10,7 +10,6 @@ type SeriesData = {
     data: number[];
 }
 
-
 type ChartData = {
     labels: {
         categories: string[];
@@ -79,8 +78,8 @@ const BarChart = () => {
 */
     return(
         <Chart 
-            options={{...options, xaxis: ChartData.labels}}
-            series={ChartData.series}
+            options={{...options, xaxis: chartData.labels}}
+            series={chartData.series}
             type="bar"
             height="240"
         />
